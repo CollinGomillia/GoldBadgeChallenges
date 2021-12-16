@@ -1,0 +1,12 @@
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\bin\Debug\ChallengeTwoClaims.exe.config
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\bin\Debug\ChallengeTwoClaims.exe
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\bin\Debug\ChallengeTwoClaims.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\bin\Debug\ChallengeTwoPoco.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\bin\Debug\ChallengeTwoRepo.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\bin\Debug\ChallengeTwoPoco.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\bin\Debug\ChallengeTwoRepo.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\obj\Debug\ChallengeTwoClaims.csprojAssemblyReference.cache
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\obj\Debug\ChallengeTwoClaims.csproj.CoreCompileInputs.cache
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\obj\Debug\ChallengeTwoClaims.csproj.CopyComplete
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\obj\Debug\ChallengeTwoClaims.exe
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoClaims\obj\Debug\ChallengeTwoClaims.pdb

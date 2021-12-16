@@ -24,7 +24,7 @@ namespace ChallengeOneCafe
                 "1. Create Menu Items\n" +
                 "2. View Menu\n" +
                 "3. Delete Menu Items\n" +
-                "5. Exit");
+                "4. Exit");
         }
 
         private void RunApplication()
@@ -46,7 +46,7 @@ namespace ChallengeOneCafe
                     case "3":
                         DeleteItem();
                         break;
-                    case "5":
+                    case "4":
                         isRunning = false;
                         Console.WriteLine("Thanks for using the Komodo Cafe App!!!");
                         break;
@@ -118,11 +118,11 @@ namespace ChallengeOneCafe
         }
         private void DisplayItemInfo(MenuItems menuItems) //Helper Method
         {
-            Console.WriteLine($"{menuItems.MealName}\n" +
-                $"{menuItems.MealNumber}\n" +
-                $"{menuItems.Description}\n" +
-                $"{menuItems.Ingredients}\n" +
-                $"{menuItems.Price}\n");
+            Console.WriteLine($"Meal name: {menuItems.MealName}\n" +
+                $"Meal number: {menuItems.MealNumber}\n" +
+                $"Meal description: {menuItems.Description}\n" +
+                $"Meal ingredients: {menuItems.Ingredients}\n" +
+                $"Meal price: {menuItems.Price}\n");
             Console.WriteLine("******************************");
             Console.ForegroundColor = ConsoleColor.Red;
         }

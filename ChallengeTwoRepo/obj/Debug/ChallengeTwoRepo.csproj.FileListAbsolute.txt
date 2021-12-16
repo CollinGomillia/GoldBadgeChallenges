@@ -1,0 +1,9 @@
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoRepo\bin\Debug\ChallengeTwoRepo.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoRepo\bin\Debug\ChallengeTwoRepo.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoRepo\bin\Debug\ChallengeTwoPoco.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoRepo\bin\Debug\ChallengeTwoPoco.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoRepo\obj\Debug\ChallengeTwoRepo.csprojAssemblyReference.cache
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoRepo\obj\Debug\ChallengeTwoRepo.csproj.CoreCompileInputs.cache
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoRepo\obj\Debug\ChallengeTwoRepo.csproj.CopyComplete
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoRepo\obj\Debug\ChallengeTwoRepo.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeTwoRepo\obj\Debug\ChallengeTwoRepo.pdb
