@@ -53,25 +53,7 @@ namespace ChallengeTwoRepo
 
 
        }
-       //Method will check difference between dates to check if valid
-       public bool ValidDates(DateTime claimDate, DateTime incidentDate)
-       {
-            var validDates = claimDate - incidentDate;
-            Console.WriteLine($"Enter the difference of days from your incident to claim: {validDates.TotalDays}");
-            if(validDates.TotalDays >= 30)
-            {
-                Console.WriteLine("Invalid");
-                return false;
-            }
-            else
-            {
-                Console.WriteLine("Valid");
-                return true;
-            }
-
-
-
-       }
+       
 
     }
 }

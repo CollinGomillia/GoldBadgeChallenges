@@ -7,7 +7,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace ClaimsUnitTest
 {
     [TestClass]
-    public class UnitTest1
+    public class ChallengeTwoTests
     {
         private readonly Queue<ClaimItems> _claimItems = new Queue<ClaimItems>();
         private readonly TwoRepository _claimRepo = new TwoRepository();
@@ -34,6 +34,7 @@ namespace ClaimsUnitTest
             //Assert
             Assert.IsNotNull(newQueue);
 
+            CollectionAssert.Contains(newQueue, claimItems);
 
 
         }
@@ -53,9 +54,14 @@ namespace ClaimsUnitTest
         [TestMethod]
         public void TestNextMethod()
         {
-            
-            //Test method for next
-
+            //ArraNGE
+            ClaimItems claimItems = new ClaimItems();
+            _claimRepo.CreateClaim(claimItems);
+            var expected = claimItems;
+            //Act
+            var actual = _claimRepo.NextClaim();
+            //Assert
+            Assert.AreEqual(expected, actual);
         }
     }
 }

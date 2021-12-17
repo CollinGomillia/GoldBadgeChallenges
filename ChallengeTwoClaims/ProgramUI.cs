@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using ChallengeTwoPoco;
 using ChallengeTwoRepo;
+using static ChallengeTwoPoco.ClaimItems;
 
 namespace ChallengeTwoClaims
 {
@@ -49,8 +51,9 @@ namespace ChallengeTwoClaims
                         NewClaim();
                         break;
                     case "4":
-                        isRunning = false;
                         Console.WriteLine("Thanks for coming!");
+                        Thread.Sleep(5000);
+                        isRunning = false;
                         break;
                     default:
                         break;
@@ -100,6 +103,7 @@ namespace ChallengeTwoClaims
                 else if(!passed)
                 {
                     Console.WriteLine("Oops!! ,something went wrong with your claim...");
+                    RunApplication();
                 }
             }
             else
@@ -117,8 +121,13 @@ namespace ChallengeTwoClaims
             Console.WriteLine("Enter the claim id: ");
             newClaim.ClaimID = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Enter the claim type: ");
-            //newClaim.TypeOfClaims = Console.ReadLine(); figure out how to fix this
+            Console.WriteLine("Choose from 1.Car \n" +
+                "2.Home\n" +
+                "3.Theft\n ");
+            int numberClaim = int.Parse(Console.ReadLine());
+            //Changes int to type
+            ClaimType claimType = (ClaimType)numberClaim;
+            newClaim.TypeOfClaims = claimType;
 
             Console.WriteLine("Enter a claim description: ");
             newClaim.Description = Console.ReadLine();
@@ -127,11 +136,42 @@ namespace ChallengeTwoClaims
             newClaim.ClaimAmount = Convert.ToDouble(Console.ReadLine());
 
             //Can't figure out how to fix date times or can have help entering date as user input
+            Console.WriteLine("Enter the date of incident(YYYY,MM,DD): ");
+            DateTime incidentDate = DateTime.Parse(Console.ReadLine());
+            newClaim.DateOfIncident = incidentDate;
+            Console.WriteLine("Enter the date of claim(YYYY,MM,DD): ");
+            DateTime claimDate = DateTime.Parse(Console.ReadLine());
+            newClaim.DateOfClaim = claimDate;
 
-            
+            newClaim.IsValid = IsClaimValid(claimDate, incidentDate);
+
+            _repoClaims.CreateClaim(newClaim);
             
         }
         
+
+
+        public bool IsClaimValid(DateTime claimDate, DateTime incidentDate)
+        {
+            //calculate date times
+            var validDates = claimDate - incidentDate;
+            //timespan to calculate days
+            double days = validDates.Days;
+            //if days < 30 -do something
+            if(days < 30)
+            {
+                Console.WriteLine("Valid");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("InValid");
+                return false;
+            }
+            
+
+        }
+
         private void Seed()
         {
             ClaimItems itemOne = new ClaimItems(1,"Car crash",2200.00,new DateTime(2020, 12, 12),new DateTime(2020, 12, 13),true, ClaimItems.ClaimType.Car);
