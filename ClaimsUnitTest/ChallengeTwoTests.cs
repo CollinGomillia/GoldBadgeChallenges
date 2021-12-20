@@ -36,7 +36,6 @@ namespace ClaimsUnitTest
 
             CollectionAssert.Contains(newQueue, claimItems);
 
-
         }
         [TestMethod]
         public void TestDeleteMethod()

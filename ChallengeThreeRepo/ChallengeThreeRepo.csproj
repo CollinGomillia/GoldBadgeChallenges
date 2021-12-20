@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CDBFCF3C-D37E-4122-8B24-E403F55AF200}</ProjectGuid>
+    <ProjectGuid>{68D84031-B6A0-4B3E-BA1C-1CFC4111F3DB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChallengeTwoRepo</RootNamespace>
-    <AssemblyName>ChallengeTwoRepo</AssemblyName>
+    <RootNamespace>ChallengeThreeRepo</RootNamespace>
+    <AssemblyName>ChallengeThreeRepo</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -41,13 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TwoRepository.cs" />
+    <Compile Include="ThreeRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChallengeTwoPoco\ChallengeTwoPoco.csproj">
-      <Project>{4408a44d-8e88-4a02-aa69-b55b954f67d4}</Project>
-      <Name>ChallengeTwoPoco</Name>
+    <ProjectReference Include="..\ChallengeThreePoco\ChallengeThreePoco.csproj">
+      <Project>{EAFDD75B-93FC-45CC-A3F2-01EEA49732AE}</Project>
+      <Name>ChallengeThreePoco</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

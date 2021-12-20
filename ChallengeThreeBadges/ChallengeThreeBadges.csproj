@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{CDBFCF3C-D37E-4122-8B24-E403F55AF200}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ChallengeTwoRepo</RootNamespace>
-    <AssemblyName>ChallengeTwoRepo</AssemblyName>
+    <ProjectGuid>{CD0B0BC5-ADE4-4809-BFDD-67FA434813A8}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ChallengeThreeBadges</RootNamespace>
+    <AssemblyName>ChallengeThreeBadges</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,13 +43,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="TwoRepository.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ChallengeTwoPoco\ChallengeTwoPoco.csproj">
-      <Project>{4408a44d-8e88-4a02-aa69-b55b954f67d4}</Project>
-      <Name>ChallengeTwoPoco</Name>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ChallengeThreePoco\ChallengeThreePoco.csproj">
+      <Project>{eafdd75b-93fc-45cc-a3f2-01eea49732ae}</Project>
+      <Name>ChallengeThreePoco</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ChallengeThreeRepo\ChallengeThreeRepo.csproj">
+      <Project>{68d84031-b6a0-4b3e-ba1c-1cfc4111f3db}</Project>
+      <Name>ChallengeThreeRepo</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
