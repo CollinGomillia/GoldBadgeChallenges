@@ -65,15 +65,16 @@ namespace ChallengeThreeBadges
         {
             Console.Clear();
             BadgeItems addBadge = new BadgeItems();
+            List<string> DoorNames = new List<string>();
 
             Console.WriteLine("What is the number on the badge: ");
             int number = Convert.ToInt32(Console.ReadLine());
             addBadge.BadgeID = number;
-            _repoBadges.CreateBadge(addBadge);
+            
 
             Console.WriteLine("List a door that it needs access to: ");
             string input = Console.ReadLine();
-            _repoBadges.CreateDoor(number, input);
+            DoorNames.Add(input);
 
             bool addingDoors = true;
             while(addingDoors)
@@ -85,15 +86,18 @@ namespace ChallengeThreeBadges
                 {
                     Console.WriteLine("List a door it needs access to: ");
                     string access = Console.ReadLine();
-                    _repoBadges.CreateDoor(number, access);
+                    DoorNames.Add(access);
 
                 }
                 else
                 {
                     addingDoors = false;
-                }
-            }
 
+                }
+
+            }
+            addBadge.DoorNames = DoorNames;
+            _repoBadges.CreateBadge(addBadge);
         }
 
         private void HelperBadges(BadgeItems badgeItems)
@@ -126,6 +130,7 @@ namespace ChallengeThreeBadges
             int userIN = Convert.ToInt32(Console.ReadLine());
 
             BadgeItems getID = _repoBadges.GetBadgeByID(userIN);
+            List<string> doors = getID.DoorNames;
 
             Console.WriteLine($"{userIN} has access to doors {getID.DoorNames}");
             Console.WriteLine();
@@ -135,25 +140,23 @@ namespace ChallengeThreeBadges
                 "2. Add a door\n");
             int choice = Convert.ToInt32(Console.ReadLine());
 
-            if(choice == 1)
+            if (choice == 1)
             {
                 Console.WriteLine("Which door would you like to remove? ");
                 string doorChoice = Console.ReadLine();
-                var deleted = _repoBadges.DeleteDoor(getID.BadgeID, doorChoice);
-                
-            }    
-            else if(choice == 2)
+                doors.Remove(doorChoice);
+
+            }
+            else if (choice == 2)
             {
                 Console.WriteLine("What door will we be adding? ");
                 string added = Console.ReadLine();
-                var doorAdded = _repoBadges.CreateDoor(getID.BadgeID, added);
-                
+                doors.Add(added);
             }
-            else
-            {
-                Console.WriteLine("Error");
-                Console.ReadKey();
-            }
+            getID.DoorNames = doors;
+            _repoBadges.UpdateBadge(userIN, getID);
+
+
 
         }
     }

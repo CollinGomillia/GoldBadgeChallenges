@@ -1,0 +1,11 @@
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\bin\Debug\ChallengeThreeBadges.exe.config
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\bin\Debug\ChallengeThreeBadges.exe
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\bin\Debug\ChallengeThreeBadges.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\bin\Debug\ChallengeThreePoco.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\bin\Debug\ChallengeThreeRepo.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\bin\Debug\ChallengeThreePoco.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\bin\Debug\ChallengeThreeRepo.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\obj\Debug\ChallengeThreeBadges.csproj.CoreCompileInputs.cache
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\obj\Debug\ChallengeThreeBadges.csproj.CopyComplete
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\obj\Debug\ChallengeThreeBadges.exe
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\obj\Debug\ChallengeThreeBadges.pdb

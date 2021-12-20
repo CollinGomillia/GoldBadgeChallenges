@@ -1,0 +1,9 @@
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeRepo\bin\Debug\ChallengeThreeRepo.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeRepo\bin\Debug\ChallengeThreeRepo.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeRepo\bin\Debug\ChallengeThreePoco.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeRepo\bin\Debug\ChallengeThreePoco.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeRepo\obj\Debug\ChallengeThreeRepo.csprojAssemblyReference.cache
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeRepo\obj\Debug\ChallengeThreeRepo.csproj.CoreCompileInputs.cache
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeRepo\obj\Debug\ChallengeThreeRepo.csproj.CopyComplete
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeRepo\obj\Debug\ChallengeThreeRepo.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeRepo\obj\Debug\ChallengeThreeRepo.pdb

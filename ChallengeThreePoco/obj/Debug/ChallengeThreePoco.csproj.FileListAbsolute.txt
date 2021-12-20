@@ -1,0 +1,6 @@
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreePoco\bin\Debug\ChallengeThreePoco.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreePoco\bin\Debug\ChallengeThreePoco.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreePoco\obj\Debug\ChallengeThreePoco.csprojAssemblyReference.cache
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreePoco\obj\Debug\ChallengeThreePoco.csproj.CoreCompileInputs.cache
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreePoco\obj\Debug\ChallengeThreePoco.dll
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreePoco\obj\Debug\ChallengeThreePoco.pdb

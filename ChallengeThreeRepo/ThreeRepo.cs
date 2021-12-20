@@ -21,7 +21,7 @@ namespace ChallengeThreeRepo
             }
             _count++;
             badgeItems.BadgeID = _count;
-            _badgeItem.Add(badgeItems.BadgeID); //Trying to add badgeID and badgeItems
+            _badgeItem.Add(badgeItems.BadgeID,badgeItems); 
             return true;
         }
         //Read
@@ -32,11 +32,11 @@ namespace ChallengeThreeRepo
         //Get badge by Id
         public BadgeItems GetBadgeByID(int BadgeID)
         {
-            foreach(BadgeItems badgeItems in _badgeItem)
+            foreach(KeyValuePair<int,BadgeItems> badgeItems in _badgeItem)
             {
-                if(BadgeID == badgeItems.BadgeID)
+                if(BadgeID == badgeItems.Key)
                 {
-                    return badgeItems;
+                    return badgeItems.Value;
                 }
             }
             return null;
@@ -57,7 +57,7 @@ namespace ChallengeThreeRepo
             }
         }
         //Delete
-        public bool DeleteDoor(int badgeId, string doorName)
+        public bool DeleteDoor(int badgeId)
         {
             var badge = GetBadgeByID(badgeId);
            
@@ -67,25 +67,14 @@ namespace ChallengeThreeRepo
             }
             foreach(var door in badge.DoorNames)
             {
-                if(door == doorName)
-                {
+               
                     badge.DoorNames.Remove(door);
                     return true;
-                }
+                
             }
             return false;
         }
-        public bool CreateDoor(int badgeID, List<string> doorNames)
-        {
-            var badge = GetBadgeByID(badgeID);
-            if(badge == null)
-            {
-                return false;
-            }
-            badge.DoorNames.Add(doorNames);
-            return true;
+       
 
-
-        }
     }
 }
