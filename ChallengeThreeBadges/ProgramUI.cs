@@ -103,12 +103,8 @@ namespace ChallengeThreeBadges
         private void HelperBadges(BadgeItems badgeItems)
         {
             Console.WriteLine("Badge#   |    Door Access");
-            Console.WriteLine();
+            Console.WriteLine($"{badgeItems.BadgeID, 1} {string.Join(" | ", badgeItems.DoorNames), 15} ");
 
-            foreach(var doors in badgeItems.DoorNames)
-            {
-                Console.Write(doors);
-            }
         }
         private void ListBadges()
         {
@@ -119,12 +115,16 @@ namespace ChallengeThreeBadges
             foreach(var badgeItems in listAllBadges)
             {
                 HelperBadges(badgeItems.Value);
+                
             }
+            Console.ReadLine();
         }
 
         private void EditBadge()
         {
             Console.Clear();
+
+            
 
             Console.WriteLine("What is the badge number to update? ");
             int userIN = Convert.ToInt32(Console.ReadLine());
@@ -132,8 +132,10 @@ namespace ChallengeThreeBadges
             BadgeItems getID = _repoBadges.GetBadgeByID(userIN);
             List<string> doors = getID.DoorNames;
 
-            Console.WriteLine($"{userIN} has access to doors {getID.DoorNames}");
-            Console.WriteLine();
+            Console.WriteLine($"Badge number {userIN} has access to {string.Join(", ", doors)}");
+            Console.WriteLine("Press any key...");
+            Console.ReadLine();
+            Console.Clear();
 
             Console.WriteLine("What would you like to do?\n" +
                 "1. Remove a door\n" +
@@ -159,5 +161,6 @@ namespace ChallengeThreeBadges
 
 
         }
+        
     }
 }

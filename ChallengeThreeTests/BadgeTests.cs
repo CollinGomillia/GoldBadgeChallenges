@@ -27,13 +27,14 @@ namespace ChallengeThreeTests
         public void TestReadMethod()
         {
             //Arrange
-            BadgeItems badgeItems = new BadgeItems();
+            BadgeItems badgeItems = new BadgeItems(1, new List<string> { "a1" });
             _threeRepo.CreateBadge(badgeItems);
             //Act
             Dictionary<int, BadgeItems> newDiction = _threeRepo.ReadBadges();
             //Assert
             Assert.IsNotNull(newDiction);
             CollectionAssert.Contains(newDiction, badgeItems);
+           
         }
         [TestMethod]
         public void TestUpdateMethod()

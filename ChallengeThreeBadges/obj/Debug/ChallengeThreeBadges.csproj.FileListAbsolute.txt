@@ -9,3 +9,4 @@ D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeT
 D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\obj\Debug\ChallengeThreeBadges.csproj.CopyComplete
 D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\obj\Debug\ChallengeThreeBadges.exe
 D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\obj\Debug\ChallengeThreeBadges.pdb
+D:\ElevenFiftySD116\GoldBadge\GoldBadgeChallenges\GoldBadgeChallenges\ChallengeThreeBadges\obj\Debug\ChallengeThreeBadges.csprojAssemblyReference.cache

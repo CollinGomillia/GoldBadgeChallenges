@@ -9,7 +9,7 @@ namespace ChallengeThreeRepo
 {
     public class ThreeRepo
     {
-        private Dictionary<int, BadgeItems> _badgeItem = new Dictionary<int, BadgeItems>();
+        private readonly Dictionary<int, BadgeItems> _badgeItem = new Dictionary<int, BadgeItems>();
         private int _count = 0;
 
         //Create
