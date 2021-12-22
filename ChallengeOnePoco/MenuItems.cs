@@ -26,12 +26,6 @@ namespace ChallengeOnePoco
             Description = description;
             Ingredients = ingredients;
             Price = price;
-
-
-
         }
-
-
-
     }
 }

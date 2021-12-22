@@ -12,13 +12,11 @@ namespace ChallengeThreeBadges
     public class ProgramUI
     {
         private ThreeRepo _repoBadges = new ThreeRepo();
-
         public void Run()
         {
             //Seed();
             RunApplication();
         }
-
         public void Menu()
         {
             Console.WriteLine("Hello Security Admin,What would you like to do?\n" +
@@ -27,17 +25,14 @@ namespace ChallengeThreeBadges
                 "3. List all badges\n" +
                 "4. Exit\n");
         }
-
         private void RunApplication()
         {
             bool isRunning = true;
-
             while(isRunning)
             {
                 Console.Clear();
                 Menu();
                 string userIN = Console.ReadLine();
-
                 switch(userIN)
                 {
                     case "1":
@@ -60,7 +55,6 @@ namespace ChallengeThreeBadges
                 }
             }
         }
-
         private void AddBadge()
         {
             Console.Clear();
@@ -71,7 +65,6 @@ namespace ChallengeThreeBadges
             int number = Convert.ToInt32(Console.ReadLine());
             addBadge.BadgeID = number;
             
-
             Console.WriteLine("List a door that it needs access to: ");
             string input = Console.ReadLine();
             DoorNames.Add(input);
@@ -81,7 +74,6 @@ namespace ChallengeThreeBadges
             {
                 Console.WriteLine("Any other door(y/n)? ");
                 string userInput = Console.ReadLine().ToUpper();
-
                 if(userInput == "Y")
                 {
                     Console.WriteLine("List a door it needs access to: ");
@@ -94,12 +86,11 @@ namespace ChallengeThreeBadges
                     addingDoors = false;
 
                 }
-
             }
             addBadge.DoorNames = DoorNames;
             _repoBadges.CreateBadge(addBadge);
         }
-
+        //To help with our List badges
         private void HelperBadges(BadgeItems badgeItems)
         {
             Console.WriteLine("Badge#   |    Door Access");
@@ -119,13 +110,9 @@ namespace ChallengeThreeBadges
             }
             Console.ReadLine();
         }
-
         private void EditBadge()
         {
             Console.Clear();
-
-            
-
             Console.WriteLine("What is the badge number to update? ");
             int userIN = Convert.ToInt32(Console.ReadLine());
 
@@ -141,7 +128,6 @@ namespace ChallengeThreeBadges
                 "1. Remove a door\n" +
                 "2. Add a door\n");
             int choice = Convert.ToInt32(Console.ReadLine());
-
             if (choice == 1)
             {
                 Console.WriteLine("Which door would you like to remove? ");
@@ -157,10 +143,6 @@ namespace ChallengeThreeBadges
             }
             getID.DoorNames = doors;
             _repoBadges.UpdateBadge(userIN, getID);
-
-
-
         }
-        
     }
 }

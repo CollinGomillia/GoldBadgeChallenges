@@ -11,13 +11,11 @@ namespace ChallengeOneCafe
     public class ProgramUI
     {
         private readonly Repository _cafeRepo = new Repository();
-
         public void Run()
         {
             Seed();
             RunApplication();
         }
-
         public void Menu()
         {
             Console.WriteLine("Welcome to Komodo Cafe!\n" +
@@ -26,7 +24,6 @@ namespace ChallengeOneCafe
                 "3. Delete Menu Items\n" +
                 "4. Exit");
         }
-
         private void RunApplication()
         {
             bool isRunning = true;
@@ -52,18 +49,12 @@ namespace ChallengeOneCafe
                         break;
                     default:
                         break;
-
                 }
             }
         }
-
         private void CreateMenuItem()
         {
             Console.Clear();
-
-
-
-
             //Get name of meal
             Console.WriteLine("What's the name of your meal?");
             string userInputMealName = Console.ReadLine();
@@ -92,17 +83,13 @@ namespace ChallengeOneCafe
             {
                 Console.WriteLine($"{userInputMealName} was successfully added!!!");
                 Console.ReadLine();
-
             }
             else
             {
                 Console.WriteLine($"{userInputMealName} was not successfully added...");
                 Console.ReadLine();
             }
-
-
         }
-
         private void ViewMenu()
         {
             Console.Clear();
@@ -128,16 +115,13 @@ namespace ChallengeOneCafe
         }
         private void DeleteItem()
         {
-
             Console.Clear();
 
             ViewMenu();
 
             Console.WriteLine("Enter the menu item number you would like to delete...");
             int mealNumber = int.Parse(Console.ReadLine());
-
             bool deleted = _cafeRepo.DeleteItem(mealNumber);
-
             if (deleted)
             {
                 Console.WriteLine("******************************");
@@ -150,7 +134,6 @@ namespace ChallengeOneCafe
                 Console.ForegroundColor = ConsoleColor.Red;
             }
         }
-
         private void Seed()
         {
             MenuItems LobsterTail = new MenuItems("Lobster Tail", 3, "Flavorful lobster straight from Maine.", "", 20.00);

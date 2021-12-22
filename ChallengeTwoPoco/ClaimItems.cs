@@ -38,7 +38,6 @@ namespace ChallengeTwoPoco
             IsValid = isValid;
             TypeOfClaims = typeOfClaims;
         }
-
         public ClaimItems(string description, double claimAmount, DateTime dateOfIncident, DateTime dateOfClaim, bool isValid)
         {
             
@@ -47,8 +46,6 @@ namespace ChallengeTwoPoco
             DateOfIncident = dateOfIncident;
             DateOfClaim = dateOfClaim;
             IsValid = isValid;
-            
         }
-
     }
 }

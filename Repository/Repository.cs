@@ -62,7 +62,6 @@ namespace ChallengeOneRepo
             }
             return null;
         }
-
         public MenuItems GetItemByName(string mealName)
         {
             foreach (MenuItems items in _listOfItems)
@@ -74,6 +73,5 @@ namespace ChallengeOneRepo
             }
             return null;
         }
-
     }
 }

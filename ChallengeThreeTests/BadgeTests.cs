@@ -34,7 +34,6 @@ namespace ChallengeThreeTests
             //Assert
             Assert.IsNotNull(newDiction);
             CollectionAssert.Contains(newDiction, badgeItems);
-           
         }
         [TestMethod]
         public void TestUpdateMethod()
@@ -50,8 +49,7 @@ namespace ChallengeThreeTests
             var actualList = badgeItems.DoorNames;
             //Assert
             Assert.AreEqual(newList, actualList);
-            Assert.IsTrue(actual);
-           
+            Assert.IsTrue(actual); 
         }
         [TestMethod]
         public void TestDeleteMethod()

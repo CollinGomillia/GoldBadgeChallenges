@@ -10,17 +10,14 @@ namespace ChallengeThreePoco
     {
         public int BadgeID { get; set; }
         public List<string> DoorNames { get; set; }
-
         public BadgeItems()
         {
 
         }
-
         public BadgeItems(int badgeID, List<string> doorNames)
         {
             BadgeID = badgeID;
             DoorNames = doorNames;
-            
         }
     }
 }

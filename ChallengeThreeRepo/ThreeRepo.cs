@@ -11,7 +11,6 @@ namespace ChallengeThreeRepo
     {
         private readonly Dictionary<int, BadgeItems> _badgeItem = new Dictionary<int, BadgeItems>();
         private int _count = 0;
-
         //Create
         public bool CreateBadge(BadgeItems badgeItems)
         {
@@ -74,7 +73,5 @@ namespace ChallengeThreeRepo
             }
             return false;
         }
-       
-
     }
 }

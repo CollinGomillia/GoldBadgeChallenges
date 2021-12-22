@@ -21,7 +21,6 @@ namespace ClaimsUnitTest
             bool actual = _claimRepo.CreateClaim(claimItems);
             //Assert
             Assert.AreEqual(expected, actual);
-
         }
         [TestMethod]
         public void TestReadMethod()
@@ -35,7 +34,6 @@ namespace ClaimsUnitTest
             Assert.IsNotNull(newQueue);
 
             CollectionAssert.Contains(newQueue, claimItems);
-
         }
         [TestMethod]
         public void TestDeleteMethod()
@@ -48,12 +46,11 @@ namespace ClaimsUnitTest
             bool actual = _claimRepo.DeleteClaims();
             //Assert
             Assert.AreEqual(expected, actual);
-
         }
         [TestMethod]
         public void TestNextMethod()
         {
-            //ArraNGE
+            //Arrange
             ClaimItems claimItems = new ClaimItems();
             _claimRepo.CreateClaim(claimItems);
             var expected = claimItems;

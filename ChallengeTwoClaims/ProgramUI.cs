@@ -13,13 +13,11 @@ namespace ChallengeTwoClaims
     public class ProgramUI
     {
         private TwoRepository _repoClaims = new TwoRepository();
-        
         public void Run()
         {
             Seed();
             RunApplication();
         }
-
         public void Menu()
         {
             Console.WriteLine("Welcome to Komodo Claims Department!\n" + 
@@ -65,7 +63,6 @@ namespace ChallengeTwoClaims
             Console.Clear();
 
             var listClaims = _repoClaims.ReadClaims();
-
 
             Console.Clear();
             
@@ -169,7 +166,6 @@ namespace ChallengeTwoClaims
                 return false;
             }
             
-
         }
 
         private void Seed()
@@ -178,12 +174,10 @@ namespace ChallengeTwoClaims
             ClaimItems itemTwo = new ClaimItems(2,"House Fire",2200.00,new DateTime(2010, 12, 12),new DateTime(2010, 12, 13),true, ClaimItems.ClaimType.Home);
             ClaimItems itemThree = new ClaimItems(3,"Burglary",2200.00,new DateTime(2020, 9, 12),new DateTime(2020, 10, 13),true, ClaimItems.ClaimType.Theft);
            
-
             _repoClaims.CreateClaim(itemOne);
             _repoClaims.CreateClaim(itemThree);
             _repoClaims.CreateClaim(itemTwo);
           
-
         }//Seed to test the project
     }
 }
