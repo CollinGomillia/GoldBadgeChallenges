@@ -11,10 +11,10 @@ namespace ChallengeThreeBadges
 {
     public class ProgramUI
     {
+        private readonly Dictionary<int, BadgeItems> _keyValues = new Dictionary<int, BadgeItems>();
         private ThreeRepo _repoBadges = new ThreeRepo();
         public void Run()
         {
-            //Seed();
             RunApplication();
         }
         public void Menu()

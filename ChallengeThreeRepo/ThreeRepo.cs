@@ -26,7 +26,9 @@ namespace ChallengeThreeRepo
         //Read
         public Dictionary<int, BadgeItems> ReadBadges()
         {
+            
             return _badgeItem;
+            
         }
         //Get badge by Id
         public BadgeItems GetBadgeByID(int BadgeID)

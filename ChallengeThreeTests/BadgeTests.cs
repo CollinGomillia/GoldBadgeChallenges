@@ -32,8 +32,17 @@ namespace ChallengeThreeTests
             //Act
             Dictionary<int, BadgeItems> newDiction = _threeRepo.ReadBadges();
             //Assert
-            Assert.IsNotNull(newDiction);
+            if (newDiction.ContainsKey(1))
+                Console.WriteLine($"{newDiction}");
+            else
+                Console.WriteLine($"{null}");
+
+
+                Assert.IsNotNull(newDiction);
             CollectionAssert.Contains(newDiction, badgeItems);
+
+            //Assert.IsNotNull(newDiction);
+            //CollectionAssert.Contains(newDiction, badgeItems);
         }
         [TestMethod]
         public void TestUpdateMethod()
